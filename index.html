@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Munhwaie — Coming Soon</title>
+  <meta name="description" content="Munhwaie official website is coming soon." />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta property="og:title" content="Munhwaie — Coming Soon" />
+  <meta property="og:description" content="Our official website is under construction." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --bg:#0f1115; --card:#151823; --fg:#eaeef6; --muted:#9aa4b2; }
+    * { box-sizing: border-box; }
+    html, body { height:100%; }
+    body {
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: radial-gradient(1200px 800px at 80% -10%, #1c2140 0%, #0f1115 60%), var(--bg);
+      color: var(--fg); display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .card {
+      width:min(680px, 100%); background: linear-gradient(180deg, #1a1f2e, var(--card));
+      border: 1px solid #2a3145; border-radius: 20px; padding: 32px; text-align:center;
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+    .logo {
+      width:64px; height:64px; border-radius:16px; display:inline-grid; place-items:center;
+      background:#2b3350; margin:0 auto 12px; font-weight:700;
+    }
+    h1 { margin: 6px 0 8px; font-size: clamp(24px, 4vw, 32px); }
+    p { margin: 0 0 18px; color: var(--muted); line-height: 1.6; }
+    .row { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:10px; }
+    .chip {
+      padding:10px 14px; border:1px solid #2a3145; border-radius:999px; color: var(--muted);
+    }
+    a.btn {
+      display:inline-block; margin-top:14px; padding:12px 18px; border-radius:12px;
+      background:#2b3350; color:#fff; text-decoration:none; border:1px solid #3b4466;
+    }
+    footer { margin-top:18px; font-size:12px; color:#7f8899; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Munhwaie",
+    "url":"https://munhwaie.github.io",
+    "email":"info@munhwaie.com"
+  }
+  </script>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="logo" aria-hidden="true">M</div>
+    <h1>Munhwaie</h1>
+    <p>공식 웹사이트를 준비 중입니다. <br/>Our official website is under construction.</p>
+    <div class="row" aria-label="company quick facts">
+      <div class="chip">Games</div>
+      <div class="chip">Mobile</div>
+      <div class="chip">Seoul</div>
+    </div>
+    <a class="btn" href="mailto:info@munhwaie.com">Contact: info@munhwaie.com</a>
+    <footer>© <span id="y"></span> Munhwaie Co., Ltd. All rights reserved.</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
